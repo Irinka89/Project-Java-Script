@@ -1,0 +1,91 @@
+.mainBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.mainBlock__container{
+    width: 81%;
+
+}
+
+.losung {
+    display: flex;
+    flex-direction: row;
+}
+
+.blockText {
+    padding-top: 71px;
+}
+.blockText h1 {
+    color: #212121;
+    font-size: 42px;
+    width: 90%;
+    margin-bottom: 24.5px;
+}
+
+.someText {
+    width: 90%;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 40px;
+    color: #212121;
+    margin-bottom: 24px;
+}
+
+.joinMeetup {
+    width: 125px;
+    height: 40px;
+    margin-bottom: 98.5px;
+    color: #fff;
+}
+
+.blockImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 1400px) {
+    .losung {
+        max-width: 1320px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .losung {
+        flex-direction: column;
+    }
+    .blockText {
+        padding-top: 30px;
+    }
+    .joinMeetup {
+        margin-bottom: 30px;
+    }
+    .blockImage {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 768px) {
+    .blockText h1 {
+        font-size: 25px;
+        line-height: 30.5px;
+    }
+    .someText {
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+ 
+@media (max-width: 576px) {
+    
+}

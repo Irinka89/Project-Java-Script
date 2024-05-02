@@ -1,0 +1,159 @@
+.header__container__block__find_rightContainer,
+.languageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header__container__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0px;
+    width: 100%;
+    justify-content: center;
+}
+
+.header__container__block__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__container__block__logo {
+    margin: 4px 40px 4px 0px;
+    padding-left: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__container__block__find {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__container__block__find input,
+.header__container__input__adaptiveFind {
+    height: 42px;
+    border: 1px solid #D9D9D9;
+    border-right: none;
+}
+
+.header__container__block__find__left {
+    border-radius: 8px 0px 0px 8px;
+    padding: 0 0 0 30px;
+}
+
+.header__container__block__find__right {
+    padding: 0 17px;
+}
+
+.header__container__block__find_rightContainer button,
+.header__adaptive__find button {
+    width: 42px;
+    height: 42px;
+    background-color: #F65858;
+    border: none;
+    border-radius: 0 8px 8px 0;
+}
+
+.header__container__block__rightBtn {
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__container__block__rightBtn__language__button__svg {
+    margin-right: 4px;
+}
+
+.header__container__block__rightBtn__language__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 20px;
+}
+
+.header__container__block__rightBtn__language,
+.header__container__block__rightBtn__logIn {
+    height: 20px;
+    border: none;
+    background-color: #fff;
+    margin-right: 22px;
+    text-decoration: none;
+}
+
+.header__container__block__rightBtn__SignUp {
+    width: 83px;
+    height: 36px;
+    color: #fff;
+}
+
+.header__adaptive__find {
+    display: none; 
+}
+
+.header__container__input__adaptiveFind {
+    height: 42px;
+    width: 85%;
+}
+
+@media (max-width: 576px) {
+    .header__container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header__container {
+        max-width: 960px;
+    }
+
+    .header__container__block__find {
+        display: none;
+    }
+
+    .header__adaptive__find {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header__container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .header__container {
+        max-width: 1320px;
+    }
+}

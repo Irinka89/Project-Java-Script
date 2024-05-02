@@ -116,6 +116,17 @@
     margin-left: 6px;
 }
 
+.availableEvents__upcoming {
+    display: flex;
+    justify-content: space-between;
+}
+
+.availableEvents__upcoming__h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36;
+}
+
 @media (min-width: 1400px) {
     
 }

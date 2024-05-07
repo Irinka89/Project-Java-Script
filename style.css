@@ -45,6 +45,9 @@ button {
   .container {
     max-width: 960px;
   }
+  .mainBlock {
+    width: 98%;
+  }
 }
 
 @media (max-width: 768px) {

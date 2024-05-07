@@ -59,7 +59,6 @@
 .availableEvents__events__event {
     display: flex;
     flex-direction: column;
-    height: 400px;
     margin-bottom: 36px;
 }
 
@@ -67,8 +66,13 @@
     width: 100%;
 }
 
+.availableEvents__events__eventDetails {
+    display: flex;
+    flex-direction: column;
+}
+
 .availableEvents__events__eventDetails__name {
-    width: 90%;
+    width: 82%;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -104,53 +108,167 @@
     padding-bottom: 30px;
 }
 
-.numberParticipantsAndStatus__participants, 
+.onlineEvent__span {
+    height: 10px;
+}
+
+.numberParticipantsAndStatus__participants,
 .numberParticipantsAndStatus__availability {
     display: flex;
     align-items: center;
     margin-right: 16px;
 }
 
-.numberParticipantsAndStatus__participants span, 
+.numberParticipantsAndStatus__participants span,
 .numberParticipantsAndStatus__availability span {
     margin-left: 6px;
 }
 
-.availableEvents__upcoming {
+.availableEvents__title_2 {
     display: flex;
     justify-content: space-between;
 }
 
-.availableEvents__upcoming__h2 {
+.availableEvents__title_2_h2 {
     font-weight: 600;
     font-size: 28px;
-    line-height: 36;
+    line-height: 36px;
+    margin-bottom: 24px;
 }
 
-@media (min-width: 1400px) {
-    
+.availableEvents__title_2_a button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #fff;
+    color: #00798A;
 }
+
+.onlineEvent {
+    display: none;
+}
+
+
+@media (min-width: 1400px) {}
 
 @media (max-width: 1200px) {
     .availableEvents__events {
-    grid-template-columns: 1fr 1fr 1fr;
-
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .availableEvents__title__h2 {
+        font-size: 20px;
+        line-height: 32px
     }
 }
 
 @media (max-width: 992px) {
     .availableEvents__events {
         grid-template-columns: 1fr 1fr;
-        }
     }
+}
 
 @media (max-width: 768px) {
     .availableEvents__events {
         grid-template-columns: 1fr;
     }
-}
- 
-@media (max-width: 576px) {
-    
+    .availableEvents__title__h2 {
+        font-size: 20px;
+        line-height: 25px
+    }
+    .availableEvents__title__find {
+        height: 30px;
+        font-size: 14px;
+    }
+    .availableEvents__title__left__svg {
+        right: 9px;
+        top: 7px;
+        width: 10px;
+        height: 11.4px;
+    }
+    .availableEvents__title__right, 
+    .availableEvents__title_2_a {
+        display: none;
+    }
+
+    .availableEvents__events__event {
+        flex-direction: row;
+    }
+
+    .availableEvents__events__picture {
+        margin-bottom: 9px;
+        margin-right: 8px;
+    }
+
+    .availableEvents__events__eventDetails {
+        position: relative;
+    }
+
+    .availableEvents__events__eventDetails__date {
+        order: 1;
+        font-weight: 500;
+        font-size: 8.5px;
+        line-height: 12.3px;
+        margin-bottom: 2px;
+        color: #7C6F50;
+    }
+
+    .availableEvents__events__eventDetails__name {
+        width: 100%;
+        order: 2;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 15px;
+        margin-bottom: 2.5px;
+    }
+
+    .availableEvents__events__eventDetails__dictance {
+        order: 3;
+        font-weight: 400;
+        font-size: 8.5px;
+        line-height: 12.3px;
+        color: #707070;
+        height: 12px;
+        margin-bottom: 0;
+    }
+
+    .numberParticipantsAndStatus__availability {
+        display: none;
+    }
+
+    .onlineEvent {
+        display: flex;
+        align-items: center;
+        order: 4;
+    }
+
+    .onlineEvent span {
+        font-weight: 500;
+        font-size: 7.3px;
+        line-height: 9.7px;
+    }
+
+    .numberParticipantsAndStatus {
+        order: 5;
+    }
+
+    .numberParticipantsAndStatus__participants svg {
+        display: none;
+    }
+
+    .numberParticipantsAndStatus__participants span {
+        font-weight: 400;
+        font-size: 8.5px;
+        line-height: 12px;
+        color: #707070;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .availableEvents__title_2_h2 {
+        font-size: 20px;
+        line-height: 25px
+    }
 }
 
+@media (max-width: 576px) {}

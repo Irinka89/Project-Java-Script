@@ -1,0 +1,324 @@
+.blubgc {
+    background-color: rgba(151, 202, 209, 0.08);
+    padding: 36px 56px;
+    background-repeat: 8px;
+}
+
+.meetupBlock {
+    display: flex;
+}
+
+.meetupBlock__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.jounMeetup__h3 {
+   font-weight: 600;
+   font-size: 28px;
+   line-height: 36px;
+   color: #212121; 
+   margin-bottom: 16px;
+}
+
+.meetupBlock__imgAdapt {
+    margin: 0 auto;
+    display: none;
+}
+
+.meetupBlock__left__span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121; 
+    width: 80%;
+    margin-bottom: 16px;
+}
+
+.meetupBlock__left__btn{
+    background-color: #E32359;
+    padding: 8px 67px;
+    color: #fff;
+}
+
+.meetupBlock__img {
+    align-items: center;
+}
+
+.topCategories__h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    color: rgba(33, 33, 33, 1);
+    margin-top: 64px;
+    margin-bottom: 24px;
+}
+
+.topCategories__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px;
+}
+.topCategories__container__category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(151, 202, 209, 0.08);
+    height: 112px;
+    padding: 0 28px;
+    border-radius: 8px;
+}
+
+.topCategories__container__category svg {
+    margin-bottom: 6px;
+}
+.topCategories__container__category span {
+    text-align: center;
+}
+
+.popular {
+    margin-bottom: 16px;
+    margin-top: 64px;
+}
+
+.popcit {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #707070;
+    margin-bottom: 28px;
+}
+
+.roundImgBlock {
+    display: flex;
+    gap: 3.75%;
+}
+
+.roundImgBlock__city {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+
+.roundImgBlock__city img {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.roundImgBlock__city span {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.howWorks {
+    margin-bottom: 24px;
+}
+
+.howWorks__searchStart {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.howWorks__searchStart__block {
+    background-color: rgba(151, 202, 209, 0.08);
+    display: flex;
+    gap: 24px;
+    padding: 32px 24px;
+    width: 49%;
+}
+
+.howWorks__searchStart__search__img {
+    height: 124px;
+}
+.howWorks__searchStart__text h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    color: #212121;
+}
+.howWorks__searchStart__text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    color: #212121;
+}
+.howWorks__searchStart__text a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #00798A;
+}
+
+.friendship {
+    margin-bottom: 16px;
+}
+
+.friendship__p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #707070;
+    margin-bottom: 28px;
+}
+
+.friendship_imageContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+}
+
+.friendship_imageContainer__img {
+    margin-bottom: 54px;
+}
+
+.friendship_imageContainer__img img {
+    width: 100%;
+}
+
+.friendship_imageContainer__img h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #212121;
+    margin-bottom: 12px;
+}
+
+.friendship_imageContainer__img p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #707070;
+    margin-bottom: 16px;
+}
+
+.friendship_imageContainer__img a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #00798A;
+    text-decoration: none;
+
+}
+
+@media (max-width: 1200px) {
+    .topCategories__container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+@media (max-width: 992px) {
+    .meetupBlock__img {
+        display: none;
+    }
+    .meetupBlock__imgAdapt {
+        display: block;
+    }
+    .meetupBlock__btn {
+        display: flex;
+        justify-content: center;
+    }
+    .topCategories__container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .topCategories__h3 {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .jounMeetup__h3span {
+        flex-direction: column;
+    }
+    .jounMeetUp__SignUp {
+        justify-content: center;
+    }
+    .jounMeetUp__SignUp__h3 { 
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .jounMeetup_rightBlock {
+        margin: 0 auto;
+        order: -1;
+    }
+    .popcit {
+        font-size: 12px;
+    }
+    .roundImgBlock__city img {
+        width: 153px;
+        height: 153px;
+    }
+    .roundImgBlock__city span {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .roundImgBlock {
+        flex-wrap: wrap;
+    }
+    .roundImgBlock__city {
+        margin-bottom: 18px;
+    }
+    .howWorks__searchStart {
+        flex-direction: column;
+    }
+    .howWorks__searchStart__block {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .howWorks__searchStart__text h4 {
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 10px;
+    }
+    .howWorks__searchStart__text p {
+        font-size: 10px;
+        line-height: 15px;
+        margin-bottom: 10px;
+    }
+    .howWorks__searchStart__text a {
+        font-size: 10px;
+        line-height: 15px;
+    }
+  }
+  @media (max-width: 768px) {
+    .topCategories__container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .jounMeetup__h3 {
+        font-size: 20px;
+     }
+     .meetupBlock__left__span {
+        font-size: 12px;
+    }
+    .roundImgBlock {
+        justify-content: space-around;
+    }
+    .friendship_imageContainer {
+        grid-template-columns: 1fr;
+    }
+    .friendship_imageContainer__img {
+        margin-bottom: 32px;
+    }
+    .friendship {
+       margin-bottom: 27px;
+        font-size: 20px;
+    }
+    .friendship__p {
+        display: none;
+    }
+    .friendship_imageContainer__img h4 {
+        font-size: 16px;
+    }
+    .friendship_imageContainer__img p {
+        font-size: 12px;
+        line-height: 23px;
+    }
+    .friendship_imageContainer__img a {
+        font-size: 12px;
+    }
+  }

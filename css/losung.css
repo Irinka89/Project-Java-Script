@@ -1,18 +1,7 @@
-.mainBlock {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.mainBlock__container{
-    width: 81%;
-
-}
-
 .losung {
     display: flex;
     flex-direction: row;
+    width: 82%;
 }
 
 .blockText {
@@ -35,11 +24,18 @@
     margin-bottom: 24px;
 }
 
+.blockImage img {
+    display: block;
+    width: 380px;
+    height: 270px;
+}
+
 .joinMeetup {
-    width: 125px;
+    padding: 8px 16px;
     height: 40px;
     margin-bottom: 98.5px;
     color: #fff;
+    cursor: pointer;
 }
 
 .blockImage {
@@ -59,6 +55,7 @@
 @media (max-width: 1200px) {
     .losung {
         flex-direction: column;
+        width: 100%;
     }
     .blockText {
         padding-top: 30px;
@@ -72,7 +69,9 @@
 }
 
 @media (max-width: 992px) {
-    
+    .joinMeetup {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -83,6 +82,10 @@
     .someText {
         font-size: 12px;
         line-height: 24px;
+    }
+    .blockImage {
+        width: 215px;
+        height: 153px;
     }
 }
  

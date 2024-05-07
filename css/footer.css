@@ -1,0 +1,122 @@
+footer {
+    background-color: #212121;
+    color: #F6F7F8;
+    
+    /* display: flex;
+    justify-content: center; */
+}
+
+.footer_container {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+
+.footer__top {
+    display: flex;
+    border-bottom: 1px solid #707070;
+}
+
+.footer__top p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 16px;
+    padding-top: 10px;
+}
+
+.footer__top button {
+    padding: 10px 14px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #212121;
+    border: 2px solid #fff;
+    margin-bottom: 25px;
+}
+
+.footer__navigation {
+    margin-top: 24px;
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.footer__navigation__block {
+    width: calc(100% / 3);
+}
+
+.footer__navigation__h5 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 7px;
+}
+
+.footer__navigation__block ul {
+    list-style: none;
+}
+
+.footer__navigation__block ul li {
+    margin-bottom: 7px;
+}
+
+.footer__navigation__block ul li a {
+    text-decoration: none;
+    color: #C5C4C4;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer__followUs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.footer__followUs__left {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px;
+}
+.followUs {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.footer__followUs__socialNetwork {
+    display: flex;
+    align-items: center;
+    gap: 25%;
+}
+
+.footer__followUs__download {
+    text-align: right;
+}
+
+.footer__personalData {
+    display: flex;
+    gap: 2%;
+}
+
+.footer__personalData a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C5C4C4;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+    .footer__followUs__download {
+        display: none;
+    }
+    .footer__personalData a {
+        display: none;
+    }
+}

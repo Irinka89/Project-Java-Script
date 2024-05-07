@@ -1,0 +1,140 @@
+.container__leftRight {
+    width: 81%;
+    margin: 81px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.container__leftRight__left__h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.eventNearBtns__h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #00798A;
+    margin-bottom: 16px;
+    display: inline;
+    border-bottom: 4px solid #00798A;
+}
+.eventNearBtns__3slelects {
+    display: flex;
+    gap: 17px;
+    margin-top: 12px;
+    margin-bottom: 56px;
+}
+
+select {
+    padding: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    appearance: none;
+    width: 100%;
+  }
+  
+  .select {
+    position: relative;
+    display: flex;
+    width: 150px;
+  }
+  
+  .select-arrow {
+    position: absolute;
+    top: 17px;
+    right: 14px;
+    /* pointer-events: none; */
+  }
+
+
+  .element__2page__block {
+    display: flex;
+    padding-top: 16px;
+    gap: 12px;
+    border-top: 1px solid #D9D9D9;
+    margin-bottom: 13px;
+  }
+
+  .element__2page__block__imgBlock {
+    width: fit-content;
+  }
+
+  .element__2page__block__img {
+    width: 100%;
+    height: 90px; 
+    object-fit: cover;
+  }
+
+  .page2Descr__date {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7C6F50;
+    margin-bottom: 4px;
+  }
+
+  .page2Descr h2{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+    margin-bottom: 4px;
+  }
+
+  .page2Descr__category {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #707070;
+  }
+
+  .page2Descr__attendees {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #707070;
+    margin-top: 48px;
+  }
+
+
+
+.container__leftRight__right p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #212121;
+}
+
+.container__leftRight__right h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #212121;
+}
+
+.container__leftRight__right__img img {
+    width: 350px;
+    height: 285px;
+}
+.container__leftRight__right__img {
+    position: relative;
+}
+.container__leftRight__right__imgBtn {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    color: #00798A;
+    border: 2px solid #00798A;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 11px 24px;
+    gap: 7.7px;
+}

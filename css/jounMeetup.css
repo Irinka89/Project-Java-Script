@@ -231,6 +231,9 @@
         font-size: 20px;
         line-height: 36px;
     }
+    .jounMeetup__h3 {
+        margin-bottom: 0;
+    }
     .jounMeetup__h3span {
         flex-direction: column;
     }
@@ -295,9 +298,9 @@
      .meetupBlock__left__span {
         font-size: 12px;
     }
-    .roundImgBlock {
+    /* .roundImgBlock {
         justify-content: space-around;
-    }
+    } */
     .friendship_imageContainer {
         grid-template-columns: 1fr;
     }
@@ -320,5 +323,14 @@
     }
     .friendship_imageContainer__img a {
         font-size: 12px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .meetupBlock__imgAdapt {
+        display: none;
+    }
+    .blockImage {
+        display: none;
     }
   }

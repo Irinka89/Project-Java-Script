@@ -61,14 +61,39 @@ select {
   }
 
   .element__2page__block__imgBlock {
-    width: fit-content;
+    position: relative;
   }
 
   .element__2page__block__img {
-    width: 100%;
+    width: 159px;
+    height: 90px; 
+  }
+
+  .element__2page__block__img img {
+    width: 160px;
     height: 90px; 
     object-fit: cover;
   }
+
+  .onlineElem {
+    padding: 2px 8px 2px 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color: #707070;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* .onlineEvent__camera {
+    text-align: left;
+  } */
 
   .page2Descr__date {
     font-weight: 500;
@@ -101,8 +126,6 @@ select {
     margin-top: 48px;
   }
 
-
-
 .container__leftRight__right p {
     font-weight: 500;
     font-size: 12px;
@@ -129,6 +152,7 @@ select {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #fff;
     color: #00798A;
     border: 2px solid #00798A;
@@ -137,4 +161,49 @@ select {
     line-height: 20px;
     padding: 11px 24px;
     gap: 7.7px;
+}
+
+@media (max-width: 1200px) {
+  .container__leftRight {
+    width: 98%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container__leftRight__right {
+    display: none;
+  }
+  .eventNearBtns__3slelects {
+    overflow: scroll;
+    padding: 1px 0 10px 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page2Descr__date {
+    font-size: 9.8px;
+    line-height: 14.7px;
+  }
+  .page2Descr h2 {
+    font-size: 8.6px;
+    line-height: 12px;
+  }
+  .page2Descr__category {
+    font-size: 9.8px;
+    line-height: 14.7px;
+  }
+  .page2Descr__attendees {
+    font-size: 9.8px;
+    line-height: 14.7px;
+  }
+  .container__leftRight__left__h2 {
+    font-size: 25px;
+  }
+  .element__2page__block__img {
+    width: 98px;
+    height: 55px;
+  }
+  .events {
+    width: 80%;
+  }
 }

@@ -53,10 +53,7 @@
 }
 
 @media (max-width: 1200px) {
-    .losung {
-        flex-direction: column;
-        width: 100%;
-    }
+    
     .blockText {
         padding-top: 30px;
     }
@@ -69,6 +66,10 @@
 }
 
 @media (max-width: 992px) {
+    .losung {
+        flex-direction: column;
+        width: 100%;
+    }
     .joinMeetup {
         display: none;
     }

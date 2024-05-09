@@ -1,3 +1,5 @@
+import { eventsStore } from "./data.js"
+
 export const createEventElement = (data) => {
     const element = document.createElement('div')
     element.classList.add('element__2page__block')
@@ -11,13 +13,28 @@ export const createEventElement = (data) => {
     img.src = data.image
     imgBlock.appendChild(img)
 
+    if (data.type === 'online') {
+      const onlineElem = document.createElement('button')
+      onlineElem.classList.add('onlineElem')
+      imgBlock.appendChild(onlineElem)
+
+      const camera = document.createElement('img')
+      camera.classList.add('onlineEvent__camera')
+      camera.src = './img/camera.svg'
+      onlineElem.appendChild(camera)
+
+      const onlineEvP = document.createElement('span'); 
+      onlineEvP.textContent = "Online Event";
+      onlineElem.appendChild(onlineEvP);
+    }
+
     const page2Descr = document.createElement('div')
     page2Descr.classList.add('page2Descr')
     element.appendChild(page2Descr)
 
     const dateElem = document.createElement('p')
     dateElem.classList.add('page2Descr__date')
-    dateElem.textContent = data.date
+    dateElem.textContent = formatDate(data.date)
     page2Descr.appendChild(dateElem)
     
     const title = document.createElement('h2')
@@ -42,9 +59,30 @@ export const createEventElement = (data) => {
   export const eventsBox = document.querySelector('.events')
   
   export const renderEvents = (arr) => {
-    eventsBox.innerHTML = ''
+    while (eventsBox.firstChild) {
+      eventsBox.removeChild(eventsBox.firstChild);
+  }
     arr.forEach((eventData) => {
       const element = createEventElement(eventData)
       eventsBox.append(element)
     })
+  }
+
+  export function formatDate(date) {
+    const newDate = new Date(date);
+    const optionsDays = {
+      weekday: "short",
+      month: "short",
+      day: "2-digit",
+    };
+    const optionsHours = {
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+      timeZone: "UTC",
+      timeZoneName: "short",
+    };
+    const formatedDays = new Intl.DateTimeFormat("en-US", optionsDays).format(newDate);
+    const formatedHours = new Intl.DateTimeFormat("en-US", optionsHours).format(newDate);
+    return `${formatedDays} · ${formatedHours} `;
   }

@@ -136,12 +136,7 @@
         width: 17px;
         height: 17px;
     }
-    .header__container__block__rightBtn__language__button__language, 
-    .header__container__block__rightBtn__logIn, 
-    .header__container__block__rightBtn__SignUp {
-        font-size: 12px;
-        line-height: 17px;
-    }
+    
 }
 
 @media (max-width: 768px) {
@@ -159,5 +154,11 @@
         justify-content: center;
         align-items: center;
         width: 87%;
+    }
+    .header__container__block__rightBtn__language__button__language, 
+    .header__container__block__rightBtn__logIn, 
+    .header__container__block__rightBtn__SignUp {
+        font-size: 12px;
+        line-height: 17px;
     }
 }

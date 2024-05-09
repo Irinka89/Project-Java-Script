@@ -80,16 +80,17 @@
         font-size: 25px;
         line-height: 30.5px;
     }
+}
+ 
+@media (max-width: 576px) {
     .someText {
         font-size: 12px;
         line-height: 24px;
     }
     .blockImage {
+        display: block;
         width: 215px;
         height: 153px;
+        margin-bottom: 20px;
     }
-}
- 
-@media (max-width: 576px) {
-    
 }

@@ -93,6 +93,7 @@
 .roundImgBlock {
     display: flex;
     gap: 3.75%;
+    justify-content: center;
 }
 
 .roundImgBlock__city {
@@ -171,7 +172,7 @@
 .friendship_imageContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 3%;
+    gap: 32px;
 }
 
 .friendship_imageContainer__img {

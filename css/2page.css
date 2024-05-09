@@ -1,9 +1,12 @@
 .container__leftRight {
-    width: 81%;
-    margin: 81px auto 0 auto;
+    width: 100%;
+    margin-top: 81px;
     display: flex;
     justify-content: space-between;
-    gap: 10%;
+}
+
+.container__leftRight__left {
+  width: 50%;
 }
 
 .container__leftRight__left__h2 {
@@ -25,8 +28,12 @@
 }
 .eventNearBtns__3slelects {
     display: flex;
-    gap: 17px;
     margin-top: 12px;
+    gap: 17px;
+    max-width: calc(100vw - 30px);
+    border: none;
+    overflow-x: scroll;
+    padding: 1px 0 10px 1px;
     margin-bottom: 56px;
 }
 
@@ -42,6 +49,7 @@ select {
     position: relative;
     display: flex;
     width: 150px;
+
   }
   
   .select-arrow {
@@ -173,9 +181,8 @@ select {
   .container__leftRight__right {
     display: none;
   }
-  .eventNearBtns__3slelects {
-    overflow: scroll;
-    padding: 1px 0 10px 1px;
+  .container__leftRight__left {
+    width: 100%;
   }
 }
 
@@ -194,6 +201,7 @@ select {
 }
 
 @media (max-width: 576px) {
+  
   .page2Descr h2 {
     font-size: 8.6px;
     line-height: 12px;

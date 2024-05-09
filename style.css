@@ -25,11 +25,6 @@ button {
   margin: 0 auto;
 }
 
-.mainBlock {
-  width: 81%;
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
 }
@@ -38,37 +33,30 @@ a:hover {
   text-decoration: underline;
 }
 
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
   }
 }
-
-@media (max-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-  .mainBlock {
-    width: 98%;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
 
 

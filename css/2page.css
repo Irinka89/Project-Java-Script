@@ -184,6 +184,16 @@ select {
     font-size: 9.8px;
     line-height: 14.7px;
   }
+  
+  .container__leftRight__left__h2 {
+    font-size: 25px;
+  }
+  .events {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
   .page2Descr h2 {
     font-size: 8.6px;
     line-height: 12px;
@@ -196,14 +206,11 @@ select {
     font-size: 9.8px;
     line-height: 14.7px;
   }
-  .container__leftRight__left__h2 {
-    font-size: 25px;
-  }
   .element__2page__block__img {
     width: 98px;
     height: 55px;
   }
-  .events {
-    width: 80%;
+  .onlineElem {
+    display: none;
   }
 }

@@ -1,8 +1,8 @@
 .container__leftRight {
-    width: 100%;
-    margin-top: 81px;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  margin-top: 81px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container__leftRight__left {
@@ -10,165 +10,169 @@
 }
 
 .container__leftRight__left__h2 {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 36px;
-    color: #000;
-    margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #000;
+  margin-bottom: 16px;
 }
 
 .eventNearBtns__h3 {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-    color: #00798A;
-    margin-bottom: 16px;
-    display: inline;
-    border-bottom: 4px solid #00798A;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #00798A;
+  margin-bottom: 16px;
+  display: inline;
+  border-bottom: 4px solid #00798A;
 }
+
 .eventNearBtns__3slelects {
-    display: flex;
-    margin-top: 12px;
-    gap: 17px;
-    max-width: calc(100vw - 30px);
-    border: none;
-    overflow-x: scroll;
-    padding: 1px 0 10px 1px;
-    margin-bottom: 56px;
+  display: flex;
+  margin-top: 12px;
+  gap: 17px;
+  max-width: calc(100vw - 30px);
+  border: none;
+  overflow-x: auto;
+  padding: 1px 0 10px 1px;
+  margin-bottom: 56px;
 }
 
 select {
-    padding: 16px;
-    font-weight: bold;
-    border-radius: 20px;
-    appearance: none;
-    width: 100%;
-  }
-  
-  .select {
-    position: relative;
-    display: flex;
-    width: 150px;
+  padding: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  appearance: none;
+  width: 150px;
+}
 
-  }
-  
-  .select-arrow {
-    position: absolute;
-    top: 17px;
-    right: 14px;
-    /* pointer-events: none; */
-  }
+.select {
+  position: relative;
+  display: flex;
+}
 
+.select-arrow {
+  position: absolute;
+  top: 17px;
+  right: 14px;
+}
 
-  .element__2page__block {
-    display: flex;
-    padding-top: 16px;
-    gap: 12px;
-    border-top: 1px solid #D9D9D9;
-    margin-bottom: 13px;
-  }
+.element__2page__block {
+  display: flex;
+  padding-top: 16px;
+  gap: 12px;
+  border-top: 1px solid #D9D9D9;
+  margin-bottom: 13px;
+}
 
-  .element__2page__block__imgBlock {
-    position: relative;
-  }
+.element__2page__block__imgBlock {
+  position: relative;
+}
 
-  .element__2page__block__img {
-    width: 159px;
-    height: 90px; 
-  }
+.element__2page__block__img {
+  width: 159px;
+  height: 90px;
+}
 
-  .element__2page__block__img img {
-    width: 160px;
-    height: 90px; 
-    object-fit: cover;
-  }
+.element__2page__block__img img {
+  width: 160px;
+  height: 90px;
+  object-fit: cover;
+}
 
-  .onlineElem {
-    padding: 2px 8px 2px 4px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    border-radius: 4px;
-    background-color: #fff;
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    color: #707070;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
+.onlineElem {
+  padding: 2px 8px 2px 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 4px;
+  background-color: #fff;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #707070;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 
-  /* .onlineEvent__camera {
+.onlEventMedia {
+  display: none;
+  margin-bottom: 1px;
+}
+
+/* .onlineEvent__camera {
     text-align: left;
   } */
 
-  .page2Descr__date {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    color: #7C6F50;
-    margin-bottom: 4px;
-  }
+.page2Descr__date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7C6F50;
+  margin-bottom: 4px;
+}
 
-  .page2Descr h2{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #212121;
-    margin-bottom: 4px;
-  }
+.page2Descr h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+  margin-bottom: 4px;
+}
 
-  .page2Descr__category {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    color: #707070;
-  }
+.page2Descr__category {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #707070;
+}
 
-  .page2Descr__attendees {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #707070;
-    margin-top: 48px;
-  }
+.page2Descr__attendees {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #707070;
+  margin-top: 48px;
+}
 
 .container__leftRight__right p {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    color: #212121;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #212121;
 }
 
 .container__leftRight__right h3 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    color: #212121;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #212121;
 }
 
 .container__leftRight__right__img img {
-    width: 350px;
-    height: 285px;
+  width: 350px;
+  height: 285px;
 }
+
 .container__leftRight__right__img {
-    position: relative;
+  position: relative;
 }
+
 .container__leftRight__right__imgBtn {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    color: #00798A;
-    border: 2px solid #00798A;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    padding: 11px 24px;
-    gap: 7.7px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #00798A;
+  border: 2px solid #00798A;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 11px 24px;
+  gap: 7.7px;
 }
 
 @media (max-width: 1200px) {
@@ -181,6 +185,7 @@ select {
   .container__leftRight__right {
     display: none;
   }
+
   .container__leftRight__left {
     width: 100%;
   }
@@ -191,7 +196,6 @@ select {
     font-size: 9.8px;
     line-height: 14.7px;
   }
-  
   .container__leftRight__left__h2 {
     font-size: 25px;
   }
@@ -201,7 +205,7 @@ select {
 }
 
 @media (max-width: 576px) {
-  
+
   .page2Descr h2 {
     font-size: 8.6px;
     line-height: 12px;
@@ -220,5 +224,14 @@ select {
   }
   .onlineElem {
     display: none;
+  }
+  .onlEventMedia {
+    display: flex;
+    font-weight: 500;
+    font-size: 7px;
+    line-height: 10px;
+  }
+  .onlEventMedia img {
+    order: -1;
   }
 }

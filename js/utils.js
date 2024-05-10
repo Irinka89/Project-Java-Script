@@ -26,6 +26,8 @@ export const createEventElement = (data) => {
       const onlineEvP = document.createElement('span'); 
       onlineEvP.textContent = "Online Event";
       onlineElem.appendChild(onlineEvP);
+
+
     }
 
     const page2Descr = document.createElement('div')
@@ -45,6 +47,21 @@ export const createEventElement = (data) => {
     category.classList.add('page2Descr__category')
     category.textContent = data.category + ' (' + data.distance + ' km)';
     page2Descr.appendChild(category)
+
+    if(data.type === 'online') {
+      const onlEventMedia = document.createElement('div')
+      onlEventMedia.classList.add('onlEventMedia')
+      page2Descr.appendChild(onlEventMedia)
+
+      const onlEventMediaP = document.createElement('p')
+      onlEventMediaP.textContent = "Online Event";
+      onlEventMedia.appendChild(onlEventMediaP)
+
+      const img = document.createElement('img');
+      img.src = "./img/camera2page.svg";
+      img.classList.add('onlineEvent__camera');
+      onlEventMedia.appendChild(img)
+    }
 
     const attendees = document.createElement('p')
     attendees.classList.add('page2Descr__attendees')

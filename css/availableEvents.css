@@ -162,6 +162,9 @@
     .availableEvents__events {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .availableEvents__events__eventDetails__date svg{
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -201,6 +204,9 @@
         position: relative;
     }
 
+    .availableEvents__events__eventDetails__date {
+
+    }
     .availableEvents__events__eventDetails__date {
         order: 1;
         font-weight: 500;
